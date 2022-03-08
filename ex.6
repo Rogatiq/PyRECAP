@@ -1,0 +1,13 @@
+
+def char_frequency(string):
+
+    dict_count = {}
+    for n in string:
+        keys = dict_count.keys()
+        if n in keys:
+            dict_count[n] += 1
+        else:
+            dict_count[n] = 1
+    return dict_count
+
+print(char_frequency('facebook.com'))
